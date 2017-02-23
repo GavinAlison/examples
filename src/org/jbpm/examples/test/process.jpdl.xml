@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process xmlns="http://jbpm.org/4.4/jpdl" name="process">
+	<start name="start">
+		<transition  name="to task"  to="state" />
+	</start>
+	<state name="state">
+		<transition  name="to task" to="task"/>
+	</state>
+	<task name="task" assignee="Alex">
+		<transition name="to end" to="end"/>
+	</task>
+	<end name="end" />
+</process>
